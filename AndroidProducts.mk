@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/nad_sagit.mk
+    $(LOCAL_DIR)/komodo_sagit.mk
 
 COMMON_LUNCH_CHOICES := \
-    nad_sagit-user \
-    nad_sagit-userdebug \
-    nad_sagit-eng
+    komodo_sagit-user \
+    komodo_sagit-userdebug \
+    komodo_sagit-eng

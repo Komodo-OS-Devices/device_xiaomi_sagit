@@ -22,12 +22,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/sagit/device.mk)
 
 # Inherit some common NAD stuff.
-$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
+$(call inherit-product, vendor/komodo/config/common_full_phone.mk)
 
 # MiuiCamera
 $(call inherit-product-if-exists, vendor/apps/MiuiCamera/config.mk)
 
-PRODUCT_NAME := nad_sagit
+PRODUCT_NAME := komodo_sagit
 PRODUCT_DEVICE := sagit
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 6
@@ -36,8 +36,6 @@ PRODUCT_MANUFACTURER := Xiaomi
 TARGET_BOOT_ANIMATION_RES := 1080
 USE_PIXEL_CHARGING := true
 TARGET_FACE_UNLOCK := true
-
-NAD_BUILD_TYPE := OFFICIAL
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
