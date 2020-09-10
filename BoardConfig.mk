@@ -34,5 +34,7 @@ TARGET_SCREEN_DENSITY := 480
 # SELinux
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
+BUILD_BROKEN_DUP_RULES := true
+
 # Inherit from proprietary files
 include vendor/xiaomi/sagit/BoardConfigVendor.mk

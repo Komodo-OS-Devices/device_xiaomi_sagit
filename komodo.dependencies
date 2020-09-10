@@ -19,7 +19,7 @@
   },
   {
     "remote": "github",
-    "repository": "trisfaizal/vendor_xiaomi-sagit",
+    "repository": "Komodo-OS-Devices/vendor_xiaomi-sagit",
     "target_path": "vendor/xiaomi",
     "branch": "ten"
   }
