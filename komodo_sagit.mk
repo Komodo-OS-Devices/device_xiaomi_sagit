@@ -21,8 +21,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from sagit device
 $(call inherit-product, device/xiaomi/sagit/device.mk)
 
-# Inherit some common AOSP stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common Komodo stuff.
+$(call inherit-product, vendor/komodo/config/common_full_phone.mk)
 
 # Firmware
 $(call inherit-product, vendor/apps/firmware-sagit/config.mk)
@@ -40,19 +40,7 @@ $(call inherit-product-if-exists, vendor/apps/OPScreenRecord/config.mk)
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# OTA
-CUSTOM_OTA_VERSION_CODE := ten
-CUSTOM_PROPERTIES += \
-    org.evolution.ota.version_code=$(CUSTOM_OTA_VERSION_CODE) \
-    sys.ota.disable_uncrypt=1
-
-PRODUCT_PACKAGES += \
-    Updates
-
-PRODUCT_COPY_FILES += \
-    vendor/aosp/config/permissions/org.evolution.ota.xml:system/etc/permissions/org.evolution.ota.xml
-
-PRODUCT_NAME := aosp_sagit
+PRODUCT_NAME := komodo_sagit
 PRODUCT_DEVICE := sagit
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 6
