@@ -34,6 +34,9 @@ $(call inherit-product-if-exists, vendor/apps/MiuiCamera/config.mk)
 $(call inherit-product-if-exists, vendor/apps/OPScreenRecord/config.mk)
 
 # Komodo dependencies
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    org.komodo.maintainer=trisf
+    
 KOMODO_VARIANT := RELEASE
 CURRENT_BUILD_TYPE := nogapps
 TARGET_BOOT_ANIMATION_RES := 1080
