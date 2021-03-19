@@ -24,9 +24,6 @@ $(call inherit-product, device/xiaomi/sagit/device.mk)
 # Inherit some common Komodo stuff.
 $(call inherit-product, vendor/komodo/config/common_full_phone.mk)
 
-# Firmware
-$(call inherit-product, vendor/apps/firmware-sagit/config.mk)
-
 # GoogleCamera
 $(call inherit-product-if-exists, vendor/apps/GoogleCamera/config.mk)
 
