@@ -33,9 +33,12 @@ $(call inherit-product-if-exists, vendor/apps/MiuiCamera/config.mk)
 # ScreenRecorder
 $(call inherit-product-if-exists, vendor/apps/OPScreenRecord/config.mk)
 
-# Gapps
-TARGET_GAPPS_ARCH := arm64
+# Komodo dependencies
+KOMODO_VARIANT := RELEASE
+CURRENT_BUILD_TYPE := nogapps
 TARGET_BOOT_ANIMATION_RES := 1080
+USE_PIXEL_CHARGING := true
+TARGET_FACE_UNLOCK := true
 
 PRODUCT_NAME := komodo_sagit
 PRODUCT_DEVICE := sagit
